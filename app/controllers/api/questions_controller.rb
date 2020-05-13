@@ -7,8 +7,9 @@ class Api::QuestionsController < ApplicationController
         render "api/questions/index"
     end
 
-    def knowledge_test
-        @questions = Question.find_by(params[:knowledge_test])
+    def test
+        @questions = Question.find_by(params[:test])
+        render "api/questions/test"
     end
 
     def category
@@ -23,7 +24,7 @@ class Api::QuestionsController < ApplicationController
         :answers_array,
         :category,
         :difficulty,
-        :knowledge_test
+        :test
     )
     
 
