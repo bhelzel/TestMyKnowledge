@@ -8,7 +8,7 @@ class Api::QuestionsController < ApplicationController
     end
 
     def knowledge_test
-        @questions = Question.find_by(params[:knowledge_test]))
+        @questions = Question.find_by(params[:knowledge_test])
     end
 
     def category
