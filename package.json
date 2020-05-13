@@ -34,3 +34,4 @@
     "start": "webpack --watch --mode=development",
     "postinstall": "webpack"
   }
+}
