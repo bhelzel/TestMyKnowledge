@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_13_044310) do
+ActiveRecord::Schema.define(version: 2020_05_13_171735) do
 
   create_table "questions", force: :cascade do |t|
     t.text "question_text", null: false
@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2020_05_13_044310) do
     t.string "answers_array", null: false
     t.string "category", null: false
     t.string "difficulty", null: false
-    t.string "knowledge_test", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "test", null: false
   end
 
   create_table "users", force: :cascade do |t|
