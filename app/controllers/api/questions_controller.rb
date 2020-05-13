@@ -4,16 +4,17 @@ class Api::QuestionsController < ApplicationController
 
     def index
         @questions = Question.all()
-        render "api/questions/index"
+        render "api/questions/game"
     end
 
     def test
         @questions = Question.find_by(params[:test])
-        render "api/questions/test"
+        render "api/questions/game"
     end
 
     def category
         @questions = Question.find_by(params[:category])
+        render "api/questions/game"
     end
 
     private
